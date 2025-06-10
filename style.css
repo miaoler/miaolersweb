@@ -1,0 +1,110 @@
+body {
+  background-image: url("./images/background.png");
+}
+
+#container {
+  border-style: double;
+  border-width: medium; 
+  color: rgb(0, 0, 0);
+  font-family: sans-serif;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#image_cat {
+  background-image: url("./images/cathy.png");
+  height: 64px;
+  width: 64px;
+}
+
+#image_cat:hover {
+  background-image: url("./images/cathy_cool.png");
+}
+
+#navigate {
+  margin: 0% 0%
+}
+
+.activated {
+  background-color:#87b1c9;
+  color:white;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:rgb(134, 192, 192);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #4F1103;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border: ridge coral;
+}
+
+li a:hover:not(.activated) {
+  background-color:crimson;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px 15px 60px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  text-align: center;
+  padding: 0 7px;
+  float: left;
+  width: 30%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
