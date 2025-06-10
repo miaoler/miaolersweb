@@ -2,7 +2,7 @@ body {
   background-image: url("./images/background.png");
 }
 
-#container {
+.container {
   border-style: double;
   border-width: medium; 
   color: rgb(0, 0, 0);
@@ -61,50 +61,26 @@ li a:hover:not(.activated) {
   background-color:crimson;
 }
 
-div.gallery {
+#bird_page div.gallery {
   border: 1px solid #ccc;
 }
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
+#bird_page div.gallery img {
   width: 100%;
   height: auto;
 }
 
-div.desc {
+#bird_page div.desc {
   padding: 15px 15px 60px;
   text-align: center;
 }
 
-* {
+#bird_page * {
   box-sizing: border-box;
 }
 
-.responsive {
+#bird_page .responsive {
   text-align: center;
   padding: 0 7px;
   float: left;
-  width: 30%;
-}
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+  width: 50%;
 }
