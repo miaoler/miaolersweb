@@ -7,8 +7,8 @@ body {
   border-width: medium; 
   color: rgb(0, 0, 0);
   font-family: sans-serif;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 #image_cat {
@@ -36,7 +36,7 @@ body {
   margin-right: auto;
 }
 
-ul {
+#navigate ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -44,11 +44,11 @@ ul {
   background-color:rgb(134, 192, 192);
 }
 
-li {
+#navigate li {
   float: left;
 }
 
-li a {
+#navigate li a {
   display: block;
   color: #4F1103;
   text-align: center;
@@ -57,20 +57,35 @@ li a {
   border: ridge coral;
 }
 
-li a:hover:not(.activated) {
+#navigate li a:hover:not(.activated) {
   background-color:crimson;
 }
 
-#bird_page div.gallery {
-  border: 1px solid #ccc;
+#visitor_counter h3{
+  text-align: center;
+  margin: 100px 0px 0px;
 }
-#bird_page div.gallery img {
+
+#bird_page #bird_gallery {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+#bird_page .bird_image {
+  padding: 3px;
+  /* border: ridge black; */
+  background-color: white;
+}
+
+#bird_page div.bird_image img {
   width: 100%;
   height: auto;
 }
 
 #bird_page div.desc {
-  padding: 15px 15px 60px;
+  padding: 15px 15px;
   text-align: center;
 }
 
@@ -81,6 +96,4 @@ li a:hover:not(.activated) {
 #bird_page .responsive {
   text-align: center;
   padding: 0 7px;
-  float: left;
-  width: 50%;
 }
