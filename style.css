@@ -97,3 +97,8 @@ body {
   text-align: center;
   padding: 0 7px;
 }
+
+#about_page span{
+  color:gray;
+  font-size:12px;
+}
